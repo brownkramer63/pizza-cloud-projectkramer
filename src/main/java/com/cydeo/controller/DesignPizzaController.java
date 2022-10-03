@@ -17,7 +17,9 @@ public class DesignPizzaController {
 
     private PizzaRepository pizzaRepository;
 
-
+    public DesignPizzaController(PizzaRepository pizzaRepository) {
+        this.pizzaRepository = pizzaRepository;
+    }
 
     @GetMapping
     public String showDesignForm(Model model) {
